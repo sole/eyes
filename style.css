@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background: #000;
+	overflow: none;
+}
+
+@keyframes blink {
+	0% {
+		transform: scaleY(1);
+	}
+
+	10% {
+		transform: scaleY(0);
+	}
+
+	12% {
+		transform: scaleY(1);
+	}
+
+	100% {
+		transform: scaleY(1);
+	}
+}
+
+.blinky {
+	animation: blink 5s infinite;
+	animation-timing-function: cubic-bezier(1,0,0,1);
+	animation-delay: 5s;
+}

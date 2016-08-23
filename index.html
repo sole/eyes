@@ -3,53 +3,17 @@
 	<head>
 		<meta charset="utf-8">
 		<title>👁</title>
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
 		<main>
-			<img src="eye.png" alt="¡Ay!" />
+			<a href="index2.html"><img src="eye.png" alt="¡Ay!" class="blinky" /></a>
 		</main>
 		<style>
-			* {
-				margin: 0;
-				padding: 0;
-			}
-			
-			html, body {
-				height: 100%;
-				width: 100%;
-			}
 			body {
-				background: #000;
 				display: flex;
 				justify-content: center;
 				align-items: center;
-			}
-			
-			main {
-			}
-
-			@keyframes blink {
-				0% {
-					transform: scaleY(1);
-				}
-
-				10% {
-					transform: scaleY(0);
-				}
-
-				12% {
-					transform: scaleY(1);
-				}
-
-				100% {
-					transform: scaleY(1);
-				}
-			}
-
-			main img {
-				animation: blink 5s infinite;
-				animation-timing-function: cubic-bezier(1,0,0,1);
-				animation-delay: 5s;
 			}
 		</style>
 	</body>
