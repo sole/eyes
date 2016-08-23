@@ -12,13 +12,21 @@
 			.blinky {
 				width: 10vw;
 				height: 10vw;
+				transition: all 0.2s ease-in;
+			}
+
+			.blinky:hover {
+				filter: hue-rotate(90deg) blur(10px);
 			}
 		</style>
 		<script>
 			window.onload = function() {
-				var num = 100;
+				var num = 50;
 				var main = document.querySelector('main');
 				var lastDelay = 0;
+				var a = document.createElement('a');
+				a.href = 'index3.html';
+				main.appendChild(a);
 				
 				for(var i = 0; i < num; i++) {
 					var el = document.createElement('img');
@@ -28,7 +36,7 @@
 					el.style.animationDelay = d + 's';
 					lastDelay = d;
 
-					main.appendChild(el);
+					a.appendChild(el);
 				}
 			};
 		</script>
